@@ -12,12 +12,14 @@
 ?>
 <footer>
 			<section class="footer-widgets">
-
+			widgets do rodapé
 			</section>
 			<section class="copyright">
+				copyright
 				
 			</section>
 		</footer>
 	</div>
+<?php wp_footer(); ?>	
 </body>
 </html>

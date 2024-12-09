@@ -8,8 +8,7 @@
  *
  * @package Fancy Lab
  */
-?>
-<!DOCTYPE html>
+?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset'); ?>">
@@ -28,10 +27,18 @@
 			<section class="top-bar">
 				<div class="container">
 					<div class="row">
-						<div class="brand col-3 col-sm-6">Logo</div>
-						<div class="second-column col-9 col-cm-6">
+						<div class="brand col-3 ">Logo</div>
+						<div class="second-column col-9 ">
 							<div class="account">Conta</div>
-							<div class="main-menu">Menu</div>
+							<nav class="main-menu">
+								<?php
+								wp_nav_menu(
+									array(
+										'theme_location' => 'fancy_lab_main_menu'
+										)
+									);
+								?>
+							</nav>
 						</div>
 					</div>
 				</div>

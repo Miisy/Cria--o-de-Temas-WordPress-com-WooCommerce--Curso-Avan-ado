@@ -12,10 +12,30 @@
 ?>
 <footer>
 			<section class="footer-widgets">
-			widgets do rodapé
+				<div class="container">
+					<div class="row">
+					widgets do rodapé
+					</div>
+				</div>
 			</section>
 			<section class="copyright">
-				copyright
+				<div class="container">
+					<div class="row">
+						<div class="copyright-text col-12 col-md-6">
+						copyright
+						</div>
+						<div class="footer-menu col-md-6 col-12 text-left text-md-right">
+							<?php
+							wp_nav_menu(
+								array(
+									'theme_location' => 'fancy_lab_footer_menu'
+								)
+								);
+								?>
+						</div>
+					</div>
+				</div>
+				
 				
 			</section>
 		</footer>
